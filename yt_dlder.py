@@ -24,15 +24,15 @@ for i in link:
 
         
 
-    yt = YouTube(i)
+    YT = YouTube(i)
 
     except:
 
         print("connection error (check ur internet)")
 
-    mp4files = yt.filter('mp4')
+    mp4files = YT.filter('mp4')
 
-    d_video = yt.get(mp4files[-1].extension,mp4files[-1].resolution)
+    d_video = YT.get(mp4files[-1].extension,mp4files[-1].resolution)
 
     try : 
 
